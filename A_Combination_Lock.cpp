@@ -2,14 +2,6 @@
 #include<cmath>
 using namespace std;
 
-int may10(int n){
-    if (n>10)
-    {
-        return n-10;
-    } 
-    else return n;
-}
-
 int recorrido(int n,int j){
     int r=0;
     if (n>j)
@@ -22,10 +14,9 @@ int recorrido(int n,int j){
             r++;
          }
 
-      // r=may10(r);
-
        return r;
 }
+
 int main(){
     int n;cin>>n;
     string ogstate;cin>>ogstate;

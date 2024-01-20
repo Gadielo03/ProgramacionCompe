@@ -31,7 +31,7 @@ int main(){
     int zc=zerocount(r,s);
     //cout<<s.size()-r-1<<" "<<zc<<endl;
 
-    if (r>-1 && zc>=6)
+    if (r> -1 && zc>=6)
     {
         cout<<"yes";
     }

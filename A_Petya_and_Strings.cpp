@@ -27,18 +27,9 @@ int main(){
     string s1;cin>>s1;
     string s2;cin>>s2;
 
-    
     s1=tlo(s1);
     s2=tlo(s2);
-
-   // cout<<s1<<endl<<s2<<endl;
-
-  /* if (s1 == s2)
-    {
-        cout<<0;
-    }
-    else*/  cout<<r(s1,s2);
-   
     
-    
+    cout<<r(s1,s2);
+ 
 }

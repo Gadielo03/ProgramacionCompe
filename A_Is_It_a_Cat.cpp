@@ -33,7 +33,7 @@ int main(){
             vctor.erase(unique(vctor.begin(), vctor.end()), vctor.end());
 
             string r(vctor.begin(),vctor.end());
-
+            
             if (r=="meow")
             {
                 cout<<"YES"<<endl;

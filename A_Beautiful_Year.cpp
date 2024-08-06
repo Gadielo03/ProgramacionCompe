@@ -25,24 +25,29 @@ using namespace std;
 #define F first
 #define S second
 #define debug cout<<"debug"<<endl;
+#define all(v) v.begin(), v.end()
 
 const ll MOD = 1e9+7;
 const ll INF = 1e18;
 
-
+bool DiferentDigits(int year){
+    string s = to_string(year);
+    sort(all(s));
+    for(int i = 0; i < 3;i++){
+        if(s[i] == s[i+1]){
+            return false;
+        }
+    }
+    return true;
+}
 
 void solve() {
-    int n;cin>>n;
-    int m;cin>>m;
-
-    for (int i = 1; i < n+1; i++)
-    {
-        for (int j = 1; j < m+1; j++)
-        {         
-          cout<<i<<" "<<j<<endl;
-        }
-        
+    int y;cin>>y;
+    y++;
+    while(!DiferentDigits(y)){
+        y++;
     }
+    cout<<y;
 }
 
 int main() {
